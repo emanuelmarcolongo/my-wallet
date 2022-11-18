@@ -1,6 +1,15 @@
 import styled from "styled-components";
 
 export const ContentContainer = styled.div`
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+    div {
+        font-family: 'Raleway', sans-serif;
+    }
+    p {
+        font-family: 'Raleway', sans-serif;
+    }
     font-family: 'Raleway', sans-serif;
     background-color: #9c28d6;
     width: 100%;
@@ -8,7 +17,7 @@ export const ContentContainer = styled.div`
 `
 
 export const LoginContainer = styled.div`
-    font-family: 'Raleway', sans-serif;
+   font-family: 'Raleway', sans-serif;
     width: 375px;
     height: 100vh;
     margin: 0 auto;
@@ -18,16 +27,19 @@ export const LoginContainer = styled.div`
     justify-content: space-around;
     background-color: #9c28d6;
     img {
+        font-family: 'Raleway', sans-serif;
         width: 147px;
         height: 50px;
     }
     p {
+        font-family: 'Raleway', sans-serif;
         color: white;
         font-weight: 700;
         font-size: 15px;
         margin-top: 25px;
     }
     a {
+        font-family: 'Raleway', sans-serif;
         text-decoration: none;
     }
 `
@@ -40,6 +52,7 @@ export const LoginForm = styled.form`
      background-color: #9c28d6;
      margin: 0 auto;
      input {
+        font-family: 'Raleway', sans-serif;
          height: 45px;
          border: 1px solid #D4D4D4;
          border-radius: 5px;
@@ -65,6 +78,7 @@ export const LoginForm = styled.form`
 `
 
 export const MainContainer = styled.div `
+font-family: 'Raleway', sans-serif;
     background-color: #9c28d6;
     display: flex;
     flex-direction: column;
@@ -89,12 +103,14 @@ export const Header = styled.div`
     font-weight: 700;
 `
 export const Transaction = styled.div`
+font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: space-between;
     padding: 5px 20px;
 `
 
 export const HistoryContent = styled.div`
+font-family: 'Raleway', sans-serif;
     width: 336px;
     background-color: white;
     overflow: scroll;
@@ -105,6 +121,7 @@ export const HistoryContent = styled.div`
 `
 
 export const Value = styled.p`
+font-family: 'Raleway', sans-serif;
  color: ${props => (props.type === "Deposit") ? "#03AC00" : "#C70000"};
 `
 
@@ -124,10 +141,12 @@ export const Saldo = styled.div`
 `
 
 export const FinalValue = styled.p`
+font-family: 'Raleway', sans-serif;
     color: ${props => (props.value > 0) ? "#03AC00" : "#C70000"};
 `
 
 export const NewTransaction = styled.div`
+font-family: 'Raleway', sans-serif;
     display: flex;
     width: 336px;
     align-items: center;
@@ -136,6 +155,7 @@ export const NewTransaction = styled.div`
 `
 
 export const NewEntry = styled.div `
+font-family: 'Raleway', sans-serif;
     width: 155px;
     height: 90px;
     display: flex;
