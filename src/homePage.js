@@ -28,10 +28,10 @@ export default function HomePage ({userInfo}) {
 
     let soma = 0;
     let subtracao = 0;
-    positivo.forEach((i) => soma += i.value )
+    positivo.forEach((i) => soma += i.value)
     negativo.forEach((i) => subtracao += i.value )
 
-    const total = soma - subtracao;
+    const total = (soma - subtracao).toFixed(1);
 
     function handleDepositClick() {
         navigate("/deposit")

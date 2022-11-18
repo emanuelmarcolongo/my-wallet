@@ -23,7 +23,7 @@ export default function SignInPage ({userInfo}) {
            navigate("/home")
         })
         .catch(err => {
-            alert(err.response.data);
+            console.log(err.response.data);
         })
 
     }

@@ -24,7 +24,7 @@ export const LoginContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #8c11be;
     img {
         font-family: 'Raleway', sans-serif;

@@ -32,7 +32,7 @@ export default function WithdrawPage ({userInfo}) {
 
            
             <LoginForm onSubmit={handleSubmit}>
-            <input required  type="number" onChange={e => body.value= Number(e.target.value)} name="value" placeholder="Valor"></input>
+            <input required  type="number" step=".1" onChange={e => body.value= Number(e.target.value)} name="value" placeholder="Valor"></input>
             <input required   type="string" onChange={e => body.description= e.target.value}  name="description" placeholder="Descrição"></input>
             <button type="submit" > Salvar Saída </button>
         </LoginForm>

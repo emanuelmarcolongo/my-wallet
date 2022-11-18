@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { ContentContainer, Header, LoginContainer, LoginForm } from "./Constants/syledComponents"
+import { ContentContainer, Header, LoginForm } from "./Constants/syledComponents"
 
 
 export default function DepositPage ({userInfo}) {
@@ -32,7 +32,7 @@ export default function DepositPage ({userInfo}) {
 
            
             <LoginForm onSubmit={handleSubmit}>
-            <input required  type="number" onChange={e => body.value= Number(e.target.value)} name="value" placeholder="Valor"></input>
+            <input required  type="number"  step=".1" onChange={e => body.value= (e.target.value)} name="value" placeholder="Valor"></input>
             <input required   type="string" onChange={e => body.description= e.target.value}  name="description" placeholder="Descrição"></input>
             <button type="submit" > Salvar Entrada </button>
         </LoginForm>
