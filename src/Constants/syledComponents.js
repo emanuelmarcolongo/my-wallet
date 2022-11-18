@@ -11,7 +11,7 @@ export const ContentContainer = styled.div`
         font-family: 'Raleway', sans-serif;
     }
     font-family: 'Raleway', sans-serif;
-    background-color: #9c28d6;
+    background-color: #8c11be;
     width: 100%;
     height: 100vh;
 `
@@ -25,7 +25,7 @@ export const LoginContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #9c28d6;
+    background-color: #8c11be;
     img {
         font-family: 'Raleway', sans-serif;
         width: 147px;
@@ -49,12 +49,12 @@ export const LoginForm = styled.form`
      flex-direction: column;
      justify-content: center;
      width: 303px;
-     background-color: #9c28d6;
+     background-color: #8c11be;
      margin: 0 auto;
      input {
         font-family: 'Raleway', sans-serif;
          height: 45px;
-         border: 1px solid #D4D4D4;
+         border: 1px solid #A328D6;
          border-radius: 5px;
          margin-bottom: 6px;
          ::placeholder {
@@ -70,16 +70,19 @@ export const LoginForm = styled.form`
          display: flex;
          align-items: center;
          justify-content: center;
-         border-radius: 4.5px;
+         border-radius: 5px;
          background-color: #A328D6;
+         font-weight: 700;
          font-size: 20px;
          color: #fff;
+         border: none;
+         
      }
 `
 
 export const MainContainer = styled.div `
 font-family: 'Raleway', sans-serif;
-    background-color: #9c28d6;
+    background-color: #8c11be;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +109,13 @@ export const Transaction = styled.div`
 font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 5px 15px;
+    font-size: 16px;
+    strong {
+        color: #C6C6C6;
+        padding-left: -5px;
+        padding-right: 10px;
+    }
 `
 
 export const HistoryContent = styled.div`
@@ -115,7 +124,7 @@ font-family: 'Raleway', sans-serif;
     background-color: white;
     overflow: scroll;
     border-radius: 5px;
-    height: 60vh;
+    height: 55vh;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 `
@@ -157,15 +166,17 @@ font-family: 'Raleway', sans-serif;
 export const NewEntry = styled.div `
 font-family: 'Raleway', sans-serif;
     width: 155px;
-    height: 90px;
+    height: 105px;
     display: flex;
-    justify-content: space-around;
-    margin-left: 10px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 10px;
     flex-direction: column;
     color: white;
     font-size: 20px;
     font-weight: 700;
-    background-color: #9c28d6;
+    background-color: #A328D6;
     img {
         width: 23px;
         height: 23px;

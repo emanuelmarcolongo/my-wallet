@@ -88,7 +88,7 @@ function Transactions ({value, type, time, description}) {
 
     return (
         <Transaction > 
-            <p>{time} <strong>{description}</strong></p>
+            <p><strong>{time}</strong> {description}</p>
             <Value type={type}>{value}</Value>
         </Transaction>
     )

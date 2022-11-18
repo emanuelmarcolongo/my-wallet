@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DepositPage from "./DepositPage";
-import GlobalStyle from "./globalStyles";
+import GlobalStyle from "./Constants/globalStyles";
 import HomePage from "./homePage";
 import SignInPage from "./signInPage";
 import SignUpPage from "./signUpPage";
