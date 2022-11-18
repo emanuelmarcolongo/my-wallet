@@ -14,13 +14,13 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    <GlobalStyle>
+      <GlobalStyle/>
       <Routes>
       <Route path="/" element={ < SignInPage  userInfo={userInfo}/>} />
       <Route path="/sign-up" element={ < SignUpPage/>} />
       <Route path="/home" element={ < HomePage userInfo={userInfo}/>} />
       </Routes>
-      </GlobalStyle>
+
     </BrowserRouter>
      
     </>

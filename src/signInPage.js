@@ -1,7 +1,7 @@
 import axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
 import logo from "./assets/MyWallet.png"
-import { LoginContainer, LoginForm } from "./Constants/syledComponents"
+import { ContentContainer, LoginContainer, LoginForm } from "./Constants/syledComponents"
 
 
 export default function SignInPage ({userInfo}) {
@@ -30,18 +30,20 @@ export default function SignInPage ({userInfo}) {
 
 
     return (
+        <ContentContainer>
         <LoginContainer>
 
         <img src={logo} />
         <LoginForm onSubmit={handleSubmit}>
-            <input required  type="email" onChange={e => body.email= e.target.value} name="email" placeholder="email"></input>
-            <input required   type="password" onChange={e => body.password= e.target.value}  name="password" placeholder="senha"></input>
+            <input required  type="email" onChange={e => body.email= e.target.value} name="email" placeholder="E-mail"></input>
+            <input required   type="password" onChange={e => body.password= e.target.value}  name="password" placeholder="Senha"></input>
             <button type="submit" > Entrar </button>
         </LoginForm>
 
         
-        <Link to="/sign-up"><p>Não possui uma conta? Faça seu cadastro!</p></Link>
+        <Link to="/sign-up"><p>Primeira vez? Cadastre-se!</p></Link>
     </LoginContainer>
+    </ContentContainer>
     )
 }
 
