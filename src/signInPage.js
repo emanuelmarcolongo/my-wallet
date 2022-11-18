@@ -15,11 +15,10 @@ export default function SignInPage ({userInfo}) {
     function handleSubmit(e) {
         e.preventDefault();
 
-
-
         axios.post("http://localhost:5000/sign-in", body)
         .then(res => {
-            userInfo.token = (res.data) ;
+            userInfo.name = (res.data.name) ;
+            userInfo.token = (res.data.token);
            navigate("/home")
         })
         .catch(err => {

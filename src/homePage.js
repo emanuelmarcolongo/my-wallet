@@ -9,22 +9,27 @@ import {useNavigate } from "react-router-dom"
 
 export default function HomePage ({userInfo}) {
 
-
     const [userHistory, setUserHistory] = useState([]);
     const navigate = useNavigate();
-
+   
     useEffect (() => {
         axios.get("http://localhost:5000/history", { headers: { Authorization: `Bearer ${userInfo.token}` } })
         .then( res => {
            setUserHistory(res.data)
     }
         )
-        .catch ( err => console.log(err));
+        .catch ( err => console.log(err.message));
     }, [])
     
 
     const positivo = userHistory.filter((i) => (i.type === "Deposit"))
     const negativo = userHistory.filter((i) => (i.type === "Withdraw"))
+
+
+    console.log("positivo");
+    console.log("negativo")
+    console.log(positivo);
+    console.log(negativo)
 
     let soma = 0;
     let subtracao = 0;
@@ -51,7 +56,7 @@ export default function HomePage ({userInfo}) {
 
         <MainContainer>
         <Header>
-            <p> Olá, fulano</p>
+            <p> Olá, {userInfo.name}</p>
             <img alt="botao sair" src={exit} onClick={handleExit}/>
         </Header>
         <HistoryContent>
