@@ -56,13 +56,3 @@ export const LoginForm = styled.form`
          }
      }
 `
-export const mainContainer = styled.div `
-    background-color: #A328D6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h1 {
-        font-size: 300px;
-    }
-`

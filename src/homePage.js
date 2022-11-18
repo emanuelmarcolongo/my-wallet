@@ -38,11 +38,12 @@ export default function HomePage ({userInfo}) {
         <HistoryContent>
             {userHistory.map((i, idx) => <Transactions key={idx} value={i.value} type={i.type} time={i.time} description={i.description} />)}
 
-            <Saldo>
+            
+        </HistoryContent>
+        <Saldo>
                 <p>SALDO</p>
                 <FinalValue value={total}>{total}</FinalValue>
             </Saldo>
-        </HistoryContent>
         </MainContainer>
     )
    
@@ -80,6 +81,7 @@ const Header = styled.div`
 const HistoryContent = styled.div`
     width: 326px;
     background-color: white;
+    overflow: scroll;
 `
 
 const Transaction = styled.div`
@@ -92,6 +94,7 @@ const Value = styled.p`
 `
 
 const Saldo = styled.div`
+ width: 326px;
     display: flex;
     align-items: center;
     justify-content: space-between;
