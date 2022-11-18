@@ -38,6 +38,7 @@ export const LoginForm = styled.form`
      justify-content: center;
      width: 303px;
      background-color: #9c28d6;
+     margin: 0 auto;
      input {
          height: 45px;
          border: 1px solid #D4D4D4;
@@ -61,4 +62,93 @@ export const LoginForm = styled.form`
          font-size: 20px;
          color: #fff;
      }
+`
+
+export const MainContainer = styled.div `
+    background-color: #9c28d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-size: 20px;
+    }
+`
+
+export const Header = styled.div`
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 336px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+`
+export const Transaction = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+`
+
+export const HistoryContent = styled.div`
+    width: 336px;
+    background-color: white;
+    overflow: scroll;
+    border-radius: 5px;
+    height: 60vh;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+`
+
+export const Value = styled.p`
+ color: ${props => (props.type === "Deposit") ? "#03AC00" : "#C70000"};
+`
+
+export const Saldo = styled.div`
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    width: 336px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+`
+
+export const FinalValue = styled.p`
+    color: ${props => (props.value > 0) ? "#03AC00" : "#C70000"};
+`
+
+export const NewTransaction = styled.div`
+    display: flex;
+    width: 336px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+`
+
+export const NewEntry = styled.div `
+    width: 155px;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #9c28d6;
+    img {
+        width: 23px;
+        height: 23px;
+        color: white;
+    }
 `
