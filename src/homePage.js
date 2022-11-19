@@ -60,9 +60,10 @@ export default function HomePage ({userInfo}) {
             <img alt="botao sair" src={exit} onClick={handleExit}/>
         </Header>
         <HistoryContent>
-            {userHistory.map((i, idx) => <Transactions key={idx} value={i.value} type={i.type} time={i.time} description={i.description} />)}
+            {userHistory.length === 0 ?
+             <h2>Não há registros de entrada ou saida</h2> :
+            userHistory.map((i, idx) => <Transactions key={idx} value={i.value} type={i.type} time={i.time} description={i.description} />)}
 
-            
         </HistoryContent>
 
         <Saldo>

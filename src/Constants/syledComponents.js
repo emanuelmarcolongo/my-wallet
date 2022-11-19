@@ -127,6 +127,13 @@ font-family: 'Raleway', sans-serif;
     height: 55vh;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    h2 {
+        text-align: center;
+        margin-left: 92px;
+        margin-top: 50%;
+        color: #868686;
+        width: 150px;
+    }
 `
 
 export const Value = styled.p`
