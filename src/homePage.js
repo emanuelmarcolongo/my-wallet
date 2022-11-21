@@ -26,11 +26,6 @@ export default function HomePage ({userInfo}) {
     const negativo = userHistory.filter((i) => (i.type === "Withdraw"))
 
 
-    console.log("positivo");
-    console.log("negativo")
-    console.log(positivo);
-    console.log(negativo)
-
     let soma = 0;
     let subtracao = 0;
     positivo.forEach((i) => soma += i.value)

@@ -4,7 +4,7 @@ import { ContentContainer, Header, LoginForm } from "./Constants/syledComponents
 
 
 export default function WithdrawPage ({userInfo}) {
-    console.log(userInfo)
+
     const body = 
     {  value: "", description: ""}
 
@@ -16,8 +16,6 @@ export default function WithdrawPage ({userInfo}) {
 
         axios.post("http://localhost:5000/withdraw", body, { headers: { Authorization: `Bearer ${userInfo.token}` } } )
         .then(res => {
-           console.log(res.data) ;
-           console.log(userInfo)
            navigate("/home")
         })
         .catch(err => {
